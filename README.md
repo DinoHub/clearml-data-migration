@@ -27,10 +27,10 @@ The following ClearML data and configurations **will** be successfully migrated 
   - Debug samples
   
 - **S3 Data**:  
-  1. PMT needs be clear on what data they wish to migrate and export their S3 data from `<Source Environment>` into a zipped folder.
+  1. PMT needs be clear on what data they wish to migrate and export their S3 data from `<Source Environment>` into a zipped folder. (If PMT needs, PMT can get bash script to perform S3 export from Jovan from AI-Engineering Cluster)
   2. PMT copy the zipped folder into a FG / Diskcrypt of the correct data security label and conduct SEP scanning for these files at L12.
   3. PMT transfer the zipped folder into their `<Target Environment>` VDI.
-  4. PMT import their S3 data into `<Target Environment>` S3.
+  4. PMT import their S3 data into `<Target Environment>` S3. (If PMT needs, PMT can get bash script to perform S3 import from Jovan from AI-Engineering Cluster)
   5. PMT may generate md5 checksums of their folder after step i, ii and iii to verify data integrity against unintentional corruption during copying and pasting.
   6. If PMT's folder in `<Source Environment>`'s S3 bucket is too large to be transferred, PMT can approach Jovan from AI-Engineering Cluster to perform backend transfer of data from `<Source Environment>` ➔ `<Target Environment>` to complete step iii after they have completed step ii.
   7. **Please note that the file structure of the folder [E.g: ```clearml-data/ProjectA/published-train-mnist-2.2bb892d3fe154e19bdd43209b0e09d1a/models/mnist.pt```] must remain unchanged during this process.**
