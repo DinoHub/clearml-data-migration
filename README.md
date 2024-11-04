@@ -40,13 +40,21 @@ The following ClearML data and configurations **will** be successfully migrated 
 
 ## ❌ Data that will not be migrated
 Certain components of ClearML data will **not** be migrated to `<Target Environment>`:
-
-- **Datasets**: Specifically, the **destination** data under the **Execution** tab and the **status reason** under the **Info** tab for datasets will not be migrated.
-- **Tasks**: Specifically, the **destination** data under the **Execution** tab and the following items under the **Info** tab for Tasks will not be migrated:
-  - **Status reason**
-  - **Status message**
-  - **Queue**
-- **Pipelines**: The **status reason** under the **Info** tab for Pipelines will not be migrated.
+- **Datasets**:
+  - **Execution** Tab
+    - **Destination**
+  - **Info** Tab
+    - **Status Reason**
+- **Tasks**:
+  - **Execution** Tab
+    - **Destination**
+  - **Info** tab
+    - **Status Reason**
+    - **Status Message**
+    - **Queue**
+- **Pipelines**:
+  - **Info**
+    - **Status Reason**
 
 - **Console Log URLs**: While console logs can be migrated, the URLs within these logs will retain their orignal values from `<Source Environment>` and not be updated to reflect the correct links in `<Target Environment>`.
 
