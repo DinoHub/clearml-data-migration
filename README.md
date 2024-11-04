@@ -32,9 +32,9 @@ The following ClearML data and configurations **will** be successfully migrated 
 - **Pipelines**: Pipelines that are in any of the aforementioned statuses will also be migrated, including all metadata under their respective tabs, unless specified otherwise in the "Data that will not be migrated" section.
   
 - **S3 Data**: If files inside your S3 bucket are too large to be transferred, you can approach Jovan from AI-Engineering Cluster to perform backend transfer of data from `<Source Environment>` ➔ `<Target Environment>` on your behalf.  
-  **⚠️ Please note that the file structure of the folder must remain unchanged during this process.**
+  **⚠️ Please note that the file structure of the folder [E.g: clearml-data/ProjectA/published-train-mnist-2.2bb892d3fe154e19bdd43209b0e09d1a/models/mnist.pt] must remain unchanged during this process.**
   
-- **Fileserver Data**: Data stored in fileserver will be migrated over and stored in the S3 of `<Target Environment>`.
+- **Fileserver Data**: Data stored in fileserver will be migrated over and stored in the S3 of `<Target Environment>`. [To be confirmed]
   
 - **Artifacts URLs (e.g., models), debug images' URLs, and hyper datasets' frames' URLs**: Links / URLs will be updated as part of the migration process.
 
