@@ -27,8 +27,14 @@ The following ClearML data and configurations **will** be successfully migrated 
   - Plots
   - Debug samples
   
-- **S3 Data**: If files inside your S3 bucket are too large to be transferred, you can approach Jovan from AI-Engineering Cluster to perform backend transfer of data from `<Source Environment>` ➔ `<Target Environment>` on your behalf.  
-  **⚠️ Please note that the file structure of the folder [E.g: clearml-data/ProjectA/published-train-mnist-2.2bb892d3fe154e19bdd43209b0e09d1a/models/mnist.pt] must remain unchanged during this process.**
+- **S3 Data**:  
+  1. PMT needs be clear on what data they wish to migrate and export their S3 data from `<Source Environment>` into a zipped folder.
+  2. PMT copy the zipped folder into a FG / Diskcrypt of the correct data security label and conduct SEP scanning for these files at L12.
+  3. PMT transfer the zipped folder into their `<Target Environment>` VDI.
+  4. PMT import their S3 data into `<Target Environment>` S3.
+  5. If PMT's folder in `<Source Environment>`'s S3 bucket is too large to be transferred, PMT can approach Jovan from AI-Engineering Cluster to perform backend transfer of data from `<Source Environment>` ➔ `<Target Environment>` to complete step iii after they have completed step ii.  
+
+**⚠️ Please note that the file structure of the folder [E.g: ```clearml-data/ProjectA/published-train-mnist-2.2bb892d3fe154e19bdd43209b0e09d1a/models/mnist.pt```] must remain unchanged during this process.**
   
 - **Fileserver Data**: Data stored in fileserver will be migrated over and stored in the S3 of `<Target Environment>`. [To be confirmed]
   
