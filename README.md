@@ -37,7 +37,7 @@ The following ClearML data and configurations **will** be successfully migrated 
   
 - **Fileserver Data**: Data stored in fileserver will be migrated over and stored in the S3 of `<Target Environment>`. [To be confirmed]
   
-- **Artifacts URLs (e.g., models), debug images' URLs, and hyper datasets' frames' URLs**: Links / URLs will be updated as part of the migration process.
+- **Artifacts URLs (e.g., models), debug images' URLs, and hyper datasets' frames' URLs** will be updated as part of the migration process.
 
 ## ❌ Data that will not be migrated
 Certain components of ClearML data will **not** be migrated to `<Target Environment>`:
