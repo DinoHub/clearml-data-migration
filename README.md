@@ -6,7 +6,6 @@ This repository provides a guide on what data and configurations can be migrated
 1. [Overview](#overview)
 2. [Migratable Data](#migratable-data)
 3. [Data that will not be migrated](#data-that-will-not-be-migrated)
-4. [Data that will not be updated Post-Migration](#data-that-will-not-be-updated-post-migration)
 
 ---
 
@@ -49,10 +48,7 @@ Certain components of ClearML data will **not** be migrated to `<Target Environm
   - **Queue**
 - **Pipelines**: The **status reason** under the **Info** tab for Pipelines will not be migrated.
 
-## ⚠️ Data that will not be updated Post-Migration
-Certain ClearML components **will not be updated** after migration and retain their original values:
-
-- **Console Log URLs**: While console logs can be migrated, the URLs within these logs will not be updated to reflect the correct links in `<Target Environment>`.
+- **Console Log URLs**: While console logs can be migrated, the URLs within these logs will retain their orignal values from `<Source Environment>` and not be updated to reflect the correct links in `<Target Environment>`.
 
 ---
 
