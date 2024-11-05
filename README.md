@@ -4,15 +4,15 @@ This repository provides a guide on what data and configurations can be migrated
 
 ## 📋 Table of Contents
 1. [Overview](#overview)
-2. [Migratable Data](#migratable-data)
-3. [Data that will not be migrated](#data-that-will-not-be-migrated)
+2. [Data that will be migrated](##data-that-will-be-migrated)
+3. [Data that will not be migrated](##data-that-will-not-be-migrated)
 
 ---
 
 ## 📌 Overview
 This guide assists teams in understanding the ClearML migration scope, highlighting the data that can be migrated from `<Source Environment>` to `<Target Environment>`, as well as the elements that will not be updated post-migration.
 
-## ✅ Migratable Data
+## ✅ Data that will be migrated
 The following ClearML data and configurations **will** be successfully migrated from `<Source Environment>` to `<Target Environment>`:
 
 - **Datasets, Tasks & Pipelines**: ClearML-managed datasets, Tasks & Pipelines with the following statuses will be migrated: **created, in_progress, ~~stopped~~, ~~closed~~, ~~failed~~, completed, ~~queued~~, published, publishing,** and ~~**unknown**~~. The migration will include metadata under the following tabs, except where noted in the "Data that will not be migrated" section:
