@@ -3,7 +3,7 @@
 This repository provides a guide on what data and configurations can be migrated from `<Source Environment>` to `<Target Environment>` and outlines any limitations on data that will not be updated post-migration.
 
 ## 📋 Table of Contents
-1. [Overview](#overview)
+1. [Overview](#-overview)
 2. [Data that will be migrated](#-data-that-will-be-migrated)
 3. [Data that will not be migrated](#-data-that-will-not-be-migrated)
 
