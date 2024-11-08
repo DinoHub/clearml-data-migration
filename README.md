@@ -56,7 +56,7 @@ Certain components of ClearML data will **not** be migrated to `<Target Environm
   - **Info**
     - **Status Reason**
 
-- **Fileserver Data**: Data stored in fileserver will **NOT** be migrated over and stored in the S3 of `<Target Environment>`. In fact, devs should not be storing data in ClearML fileserver.
+- **Fileserver Data**: Data stored in fileserver will **NOT** be migrated over to the S3 of `<Target Environment>`. In fact, devs should not be storing data in ClearML fileserver.
 
 - **Console Log URLs**: While console logs can be migrated, the URLs within these logs will retain their orignal values from `<Source Environment>` and not be updated to reflect the correct links in `<Target Environment>`.
 
