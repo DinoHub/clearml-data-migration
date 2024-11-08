@@ -48,7 +48,8 @@ Certain components of ClearML data will **not** be migrated to `<Target Environm
     - **Status Reason**
 - **Tasks**:
   - **Execution** Tab
-    - **Destination** Please note that since this will not be migrated, if you wish to clone your migrated tasks and run it, please **SET** this field to             ``s3://<s3_url>:<<s3_port_number>>/<<bucket_name>>`` to ensure your output artifacts are saved in your S3 bucket.
+    - **Destination**
+    [Note: Since this will not be migrated, if you wish to clone your migrated tasks and run it in `<Target Environment>`, please **set** this field to             ``s3://<s3_url>:<<s3_port_number>>/<<bucket_name>>`` to ensure your output artifacts are saved in your S3 bucket.]
   - **Info** tab
     - **Status Reason**
     - **Status Message**
