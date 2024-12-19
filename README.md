@@ -16,15 +16,20 @@ This guide assists teams in understanding the ClearML migration scope, highlight
 The following ClearML data and configurations **will** be successfully migrated from `<Source Environment>` to `<Target Environment>`:
 
 - **Datasets, Tasks & Pipelines**: ClearML-managed datasets, Tasks & Pipelines with the following statuses will be migrated: **created, in_progress, ~~stopped~~, ~~closed~~, ~~failed~~, completed, ~~queued~~, published, publishing,** and ~~**unknown**~~. The migration will include metadata under the following tabs, except where noted in the "Data that will not be migrated" section:
-  - Execution
-  - Configuration
-  - Artifacts
-  - Dataview
-  - Info
-  - Console
-  - Scalar
-  - Plots
-  - Debug samples
+  - Tabs:
+    - Execution
+    - Configuration
+    - Artifacts
+    - Dataview
+    - Info
+    - Console
+    - Scalar
+    - Plots
+    - Debug samples
+  - ClearML Task / Dataset IDs
+  - ClearML Dataset Versions' Lineage
+  - Ability to download the same dataset using Dataset.get(dataset_id=dataset_id).get_local_copy() before and after migration in source and target environment respectively.
+  - Label Tags
   
 - **S3 Data**:  
   1. PMT needs be clear on what data they wish to migrate and export their S3 data from `<Source Environment>` into a zipped folder. (If PMT needs, PMT can get bash script to perform S3 export from Jovan from AI-Engineering Cluster)
