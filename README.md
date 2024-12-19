@@ -43,17 +43,20 @@ Certain components of ClearML data will **not** be migrated to `<Target Environm
   - **Execution** Tab
     - **Destination**
   - **Info** Tab
+    - **Description**
     - **Status Reason**
 - **Tasks**:
   - **Execution** Tab
     - **Destination**
     [Note: Since this will not be migrated, if you wish to clone your migrated tasks and run it in `<Target Environment>`, please **set** this field to             ``s3://<s3_url>:<<s3_port_number>>/<<bucket_name>>`` to ensure your output artifacts are saved in your S3 bucket.]
   - **Info** tab
+    - **Description**  
     - **Status Reason**
     - **Status Message**
     - **Queue**
 - **Pipelines**:
-  - **Info**
+  - **Info** Tab
+    - **Description**
     - **Status Reason**
 
 - **Fileserver Data**: Data stored in fileserver will **NOT** be migrated over to the S3 of `<Target Environment>`. In fact, devs should not be storing data in ClearML fileserver.
